@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('movie-popcorn.jpg') no-repeat;
+    background-size: cover; /* Set background size to cover full screen */
+    display: flex;
+}
+
+
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 480px;
+    display:flex;
+    background: #fff;
+    border-radius: 10px;
+    border:2px solid rgba(255,255,255,.5);
+    align-items: center;
+    justify-content: center;
+    margin-right: 700px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    transition: transform .3s ease,height .2s ease;
+}
+
+    .container.active{
+        height: 520px;
+    }
+    .container .form-box{
+        width: 100%;
+        padding: 40px;
+    }
+
+
+
+
+
+.container.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+.container .form-box.login{
+    transition: none;
+    transform: translateX(0);   
+}
+.container.active .form-box.register{
+    transition: transform .18s ease;
+    transform:translateX(0);
+}
+.container .form-box.register{
+    position: absolute;
+    transition: none;
+    transform:translateX(400px);
+}
+
+.register-link{
+    border: 1px gray solid;
+    padding: 5px;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    
+
+}
+.register-link a{
+    color: black;
+}
+.register-link:hover{
+    background-color: rgb(219, 219, 91);
+}
+
+.form-box-login header h1{
+    text-align: center;
+    color: rgb(35, 98, 200);
+}
+
+.form-box-login form{
+    margin-block: 30px;
+}
+
+form input {
+ 
+    width: 100%;
+    padding: 16px 16px;
+    background: #a3a3a331;
+    outline: none;
+    border: none;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    margin-left:30px ;
+}
+
+.btn{
+    color: white;
+    background: rgb(104, 104, 235);
+    cursor: pointer;
+    font-weight: 700;
+    transition: all .4s ease;
+    border-radius: 16px;
+}
+
+.btn:hover{
+    background: rgb(110, 107, 235);;
+}
+
+.login-exit{
+    position: absolute;
+    right: 4%;
+    cursor: pointer;
+    font-size: 25px;
+   top: 10px;
+    padding: 3px;
+    border-radius: 50%;
+    
+}
+.link-img{
+   margin-block: 10px;
+    display: flex;
+}
+
+
+
+.link-img a{
+    margin-inline: 40px;
+    font-size: 30px;
+}
+
+
+.Sing-up{
+    cursor: pointer;
+    border:1px rgb(181, 174, 174) solid;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 1rem;
+    margin-top: 20px;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.Sing-up:hover{
+    background-color: rgb(219, 219, 91);
+}
+
+
+
+
+.form-box-register header h1{
+    text-align: center;
+    color: rgb(35, 98, 200);
+}
